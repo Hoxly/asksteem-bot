@@ -1,0 +1,8 @@
+Here are some related posts:
+<ul>
+{% for post in related %}
+<li><a href="https://steemit.com/@{{ post.author }}/{{ post.permlink }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+<hr>
+<i>I'm the <a href="https://www.asksteem.com">AskSteem</a> Bot <a href="https://goo.gl/forms/ggpxR1wQroHP50VT2">[BETA]</a> - I try to be helpful but if you don't want me click my username and hit "mute". You can also leave <a href="https://goo.gl/forms/ggpxR1wQroHP50VT2">feedback</a>.</i>﻿
