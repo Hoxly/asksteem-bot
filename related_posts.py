@@ -56,6 +56,7 @@ while True:
             if post.is_main_post():
                 # for now limit it the english posts
                 if TextBlob(post.title).detect_language() == 'en':
+                    # prevent spamming of posts
                     if not already_replied_to(post):
                         related = get_related_results(post)
                         if len(related) > 0:
